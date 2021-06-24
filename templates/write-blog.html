@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block sub_content %}
+<form method="POST">
+<label> Blogtitle </label>
+<input type="text" name="blogtitle" size="15"/> <br>
+  <textarea name='blogarea' rows="9" cols="70">
+Enter your blog/idea here
+</textarea>
+<button type="submit" name="button">'Submit'</button>
+</form>
+{% endblock %}

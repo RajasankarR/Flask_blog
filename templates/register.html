@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block sub_content %}
+<form method="POST">
+<label> Firstname </label>
+<input type="text" name="firstname" size="15"/> <br> <br>
+<label> Lastname: </label>
+<input type="text" name="lastname" size="15"/> <br> <br>
+<label> username: </label>
+<input type="text" name="username" size="15"/> <br> <br>
+<br> <br>
+Email:
+<input type="email" id="email" name="email"/> <br>
+<br> <br>
+Password:
+<input type="Password" id="pass" name="pass"> <br>
+<br> <br>
+Re-type password:
+<input type="Password" id="repass" name="repass"> <br> <br>
+<button type="submit" name="button">'Submit'</button>
+</form>
+{% endblock %}

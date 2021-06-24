@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% block sub_content %}
+{% if blogs %}
+  {% for blog in blogs %}
+  <table>
+    <tr>
+    <td><a href="/blogs/{{ blog['blog_id'] }}"/> {{ blog['title'] }}  <h4> written by {{ blog['author'] }} </h4> </td>
+    <td><a href="/edit-blog/{{ blog['blog_id'] }}" class="btn btn-primary"/>  Edit </td>
+    <td><a href="/delete-blog/{{ blog['blog_id'] }} " class="btn btn-danger"/>  delete </td>
+    </tr>
+  </table>
+  {% endfor %}
+{% else %}
+  <h3>No blogs found</h3>
+
+{% endif %}
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block sub_content %}
+
+ <div clas='container' text='center'>
+<h1>title is  {{ blog['title'] }} </h1>
+</div>
+<hr>
+<div clas='container' text='center'>
+<p> {{ blog['body'] }} </p>
+</div>
+<hr>
+<div clas='container' text='center'>
+<h1> Written by:{{  blog['author'] }} </h1>
+</div>
+{% endblock %}
